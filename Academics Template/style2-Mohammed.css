@@ -1,0 +1,185 @@
+
+        :root {
+            --primary-dark: #002147;
+            --accent-yellow: #fdc800;
+      
+            --overlay-blue: rgba(0, 33, 71, 0.295);
+            --card-blue: #002147;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+     
+        .navbar-custom {
+            background-color: var(--primary-dark);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-brand-custom {
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .brand-icon-svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--accent-yellow);
+            margin-left: 10px;
+        }
+        .nav-menu-custom {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-item-custom a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .nav-item-custom a.active {
+            color: var(--accent-yellow);
+        }
+        .btn-apply-custom {
+            background-color: var(--accent-yellow);
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 25px;
+        }
+
+        .hero-section {
+            background: url('hero-bg.png') no-repeat center center/cover;
+            position: relative;
+            padding: 150px 0 160px 0;
+            color: white;
+            text-align: center;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--overlay-blue);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.85);
+        }
+        .hero-text {
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            color: #ffffff;
+            line-height: 1.6;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.85);
+        }
+        
+  
+        .btn-course {
+            background-color: #002147;
+            color: white;
+            border: none; 
+            padding: 14px 35px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            transition: background 0.3s ease;
+        }
+        .btn-course:hover {
+            background-color: var(--accent-yellow);
+            color: #000;
+        }
+
+     
+        .feature-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 3;
+            margin-top: -145px;
+        }
+        .feature-container {
+            width: 85%;
+            max-width: 1200px;
+            display: flex;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        .feature-card {
+            background-color: var(--card-blue);
+            color: white;
+            padding: 40px 30px;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 1px solid rgba(255,255,255,0.15);
+        }
+        .feature-card:last-child {
+            border-left: none;
+        }
+        .feature-info {
+            text-align: right;
+            padding-left: 15px;
+        }
+        .feature-card h5 {
+            margin: 0 0 10px 0;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .feature-card p {
+            margin: 0;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+        .feature-icon-svg {
+            width: 45px;
+            height: 45px;
+            fill: var(--accent-yellow);
+            flex-shrink: 0;
+        }
+
+   
+        .welcome-section {
+            padding: 150px 0 0 0;
+            text-align: center;
+            background-color: #fff;
+        }
+        .welcome-title {
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .welcome-text {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+          
+            
+            color: #64748b;
+            line-height: 1.8;
+        }
+        .student-img {
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
